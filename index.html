@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShapeUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id=c></canvas>
+    <div>
+        <h1>⚪️🔷🔻🟪 Shape Up Or Shape Out 🟪🔻🔷⚪️</h1>
+    </div>
+    <div id="inputDiv">
+        <div id="rectangleDiv">
+            <input class="recInput" id="recHeight" type="number" placeholder="Height(px)">
+            <input class="recInput" id="recWidth" type="number" placeholder="Width(px)">
+            <input class="shpBtn" type="button" id="rectangleBtn" value="Insert Rectangle">
+        </div>
+
+        <div id="squareDiv">
+            <input class="input" id="sideLength" type="number" placeholder="Height(px) & Width(px)">
+            <input class="shpBtn" type="button" id="squareBtn" value="Insert Square">
+        </div>
+
+        <div id="circleDiv">
+            <input class="input" id="radiusCir" type="number" placeholder="Radius(px)">
+            <input class="shpBtn" type="button" id="circleBtn" value="Insert Circle">
+        </div>
+
+        <div id="triangleDiv">
+            <input class="input" id="triHeight" type="number" placeholder="Base(px)">
+            <input class="shpBtn" type="button" id="triangleBtn" value="Insert Triangle">
+        </div>
+    </div>
+    <div id="contentDiv">
+
+        <div id="shapesContainer" class="wrapper"></div>
+
+        <div id="sidePanel">
+            <h2 class="infoBars">Shape Info:</h2>
+            <p id="shapeNameSP" class="infoBars">Shape</p>
+            <p id="stat1" class="infoBars">Stat: 1</p>
+            <p id="stat2" class="infoBars">Stat: 2</p>
+            <p id="stat3" class="infoBars">Stat: 3</p>
+            <p id="stat4" class="infoBars">Stat: 4</p>
+
+        </div>
+    </div>
+    <div id="clear">
+        <input type="button" id="clearBtn" value="Clear the Board">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

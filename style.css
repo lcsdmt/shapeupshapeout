@@ -1,0 +1,167 @@
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+  }
+
+body{
+    background-color: maroon;
+    font-family: fantasy ;
+}
+
+h1{
+    color: mintcream;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: navy;
+    border: 5px solid mintcream;
+    border-radius: 5%;
+    text-decoration: underline;
+    text-align: center;
+    position: relative;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+p{
+    background-color: indigo;
+    border-radius: 100%;
+    color: cornflowerblue;
+    width: 250px;
+    text-align: center;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+input{
+  margin: 2px;
+  position: relative;
+  font-family: fantasy;
+  text-shadow: 1px 1px 2px grey;
+}
+
+#contentDiv{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#shapesContainer{
+    width: 600px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 8px #888888;
+    border: 5px solid cyan; 
+    border-radius: 5%;
+}
+
+#sidePanel{
+    position: relative;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: cornflowerblue;
+    box-shadow: 10px 10px 8px #888888;
+    border: 5px solid indigo;
+    border-radius: 5%;
+}
+
+#inputDiv{
+    position: relative;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: cornflowerblue;
+    border-radius: 5%;
+    border: 5px solid indigo;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.shpBtn{
+    width: 150px;
+}
+
+.recInput{
+    width: 367px;
+}
+
+.input{
+    width: 750px;
+}
+
+.circle {
+    /* width: 100px;
+    height: 100px; */
+    background: purple;
+    border-radius: 50%;
+    opacity: 50%;
+  }
+
+  .rectangle {
+    /* width: 200px;
+    height: 100px; */
+    background: green;
+    opacity: 50%;
+  }
+
+  .square {
+    /* width: 100px;
+    height: 100px; */
+    background: red;
+    opacity: 50%;
+  }
+
+  .triangle{
+    width: 0;
+    height: 0;
+    border-bottom-style: solid;
+    border-bottom-color: yellow;
+    border-left-style: solid;
+    border-left-color: transparent;
+    border-right-style: solid;
+    border-right-color: transparent;
+    opacity: 50%;
+  }
+
+#clear{
+    text-align: center;
+}
+
+#clearBtn{
+margin: 50px;
+    width: 150px;
+}
+
+  @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap")
+  repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+
+
+.title {
+  font-size: 5.6rem;
+  font-family: "Lobster", cursive;
+}
+
+.wrapper {
+  background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80");
+  color: #eee;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  animation: animation 100s linear infinite;
+}
+
+@keyframes animation {
+  100% {
+    background-position: 0px -3000px;
+  }
+}
